@@ -108,3 +108,125 @@
     background-color: #16a085;
     color: white;
 }
+
+/* Referanslar Bölümü */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials .section-title {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #1abc9c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.testimonial-card {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.author-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-right: 10px;
+    color: #34495e;
+}
+
+.author-title {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin: 0;
+}
+
+.testimonials h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1abc9c; /* Başlık altı çizgi */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Mobil Uyumlu Tasarım */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 40px 10px;
+    }
+
+    .testimonial-card {
+        padding: 15px;
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+    }
+
+    .author-name {
+        font-size: 1rem;
+    }
+
+    .author-title {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonials {
+        padding: 30px 5px;
+    }
+
+    .author-img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .testimonial-text {
+        font-size: 0.8rem;
+    }
+
+    .author-name {
+        font-size: 0.9rem;
+    }
+
+    .author-title {
+        font-size: 0.75rem;
+    }
+}
