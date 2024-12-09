@@ -93,46 +93,6 @@
     margin-bottom: 20px;
 }
 
-/* İletişim kısımı için stil */
-.contact {
-    margin: 0 20px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact h2 {
-    font-size: 1.8rem;
-    color: #34495e;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #1abc9c; /* Başlık altı çizgi */
-    display: inline-block;
-    padding-bottom: 5px;
-    justify-content: center;
-}
-
-/* Küçük ekranlar (576px ve daha küçük) için düzenleme */
-@media (max-width: 576px) {
-    .contact {
-        margin: 0 10px; /* Yan boşlukları azalt */
-        margin-bottom: 15px; /* Alt boşluğu azalt */
-    }
-
-    .contact h2 {
-        font-size: 1.5rem; /* Başlık boyutunu küçült */
-        margin-bottom: 15px; /* Alt boşluğu azalt */
-        padding-bottom: 3px; /* Çizgi ile başlık arasındaki boşluğu azalt */
-    }
-
-    .contact p {
-        font-size: 0.9rem; /* Açıklama metni boyutunu küçült */
-    }
-
-    .contact .btn {
-        padding: 10px 20px; /* Buton boyutunu küçült */
-        font-size: 0.9rem; /* Buton metni boyutunu küçült */
-    }
-}
-
 /* Buton stili */
 .btn-large {
     background-color: #1abc9c;
