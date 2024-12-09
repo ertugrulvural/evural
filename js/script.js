@@ -14,20 +14,6 @@ fetch('footer.html')
     })
     .catch(error => console.log(error));
 
-// Günün saatine göre hoşgeldin mesajı
-document.addEventListener("DOMContentLoaded", () => {
-    const welcomeMessage = document.querySelector(".welcome p");
-    const hours = new Date().getHours();
-
-    if (hours < 12) {
-        welcomeMessage.textContent = "Günaydın! Web sayfama hoş geldiniz.";
-    } else if (hours < 18) {
-        welcomeMessage.textContent = "İyi günler! Projelerimi inceleyebilirsiniz.";
-    } else {
-        welcomeMessage.textContent = "İyi akşamlar! Web sayfamı keşfetmeye devam edin.";
-    }
-});
-
 /* dark-mode denemesi durduruldu
 
 document.addEventListener("DOMContentLoaded", () => {
