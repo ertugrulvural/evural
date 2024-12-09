@@ -1,0 +1,256 @@
+/* Hakkımda alanı --- */
+.about {
+    padding: 60px 20px;
+    background-color: #ecf0f1; /* Sayfa arka plan rengi */
+    color: #2c3e50; /* Sayfa yazı rengi */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.about-image-wrapper {
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 200px;
+    height: 200px;
+    /* margin-right: 60px; */
+    border-radius: 50%;
+    border: 1px solid #009577; /* Daha sade bir çerçeve */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+.about-text h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1abc9c; /* Başlık altı çizgi */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-indent: 40px; /* Paragraf girintisi */
+    text-align: left; /* Yazıyı sola yasla */
+}
+
+/* Geniş ekranlar için yan yana düzen */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-image-wrapper {
+        margin-right: 100px;
+        margin-bottom: 0;
+    }
+
+    /* .about-text {
+        text-align: left;
+    } */
+}
+/* --- Hakkımda alanı */
+
+
+/* Yetenekler alanı --- */
+.skills {
+    margin: 40px 0;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.skills h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1abc9c; /* Başlık altı çizgi */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.skill-item {
+    background-color: #ecf0f1;
+    color: #34495e;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    width: 160px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    background-color: #1abc9c;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.skill-item i {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    .skill-item {
+        width: 100%;
+    }
+}
+/* --- Yetenekler alanı */
+
+
+/* iş deneyimi ve eğitim ana bölümü --- */
+.experience-education {
+    display: flex;               /* Flexbox kullanımı */
+    flex-wrap: wrap;             /* Ekran daraldığında öğeler alt alta geçsin */
+    justify-content: space-between; /* Yatayda boşluk ayarı */
+    gap: 20px;                   /* Öğeler arasındaki boşluk */
+    margin: 40px 0;
+}
+
+.experience,
+.education {
+    background-color: #ecf0f1;   /* Hafif gri arka plan */
+    border-radius: 10px;         /* Yuvarlatılmış köşeler */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    flex: 1 1 calc(50% - 20px); /* Genişlik: %50 eksi boşluk */
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.experience:hover,
+.education:hover {
+    transform: translateY(-5px); /* Hover'da yukarı kaldırma efekti */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.experience h2,
+.education h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1abc9c; /* Başlık altı çizgi */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+    .experience-education {
+        flex-direction: column;  /* Mobilde alt alta gelsin */
+    }
+
+    .experience,
+    .education {
+        flex: 1 1 100%;         /* Tam genişlik alsın */
+    }
+}
+/* --- iş deneyimi ve eğitim ana bölümü */
+
+
+/* Hobiler ve İlgi Alanları --- */
+.hobbies {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.hobbies h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1abc9c; /* Başlık altı çizgi */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Dinamik kolon yapısı */
+    gap: 30px; /* Kartlar arası boşluk */
+    padding: 20px;
+}
+
+.hobby-item {
+    background-color: #ecf0f1;   /* Hafif gri arka plan */
+    border-radius: 10px;         /* Kartların yuvarlak köşeleri */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-item:hover {
+    transform: translateY(-5px); /* Hover'da yukarı kalkma efekti */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Daha yoğun gölge */
+}
+
+.hobby-item i {
+    font-size: 2.5rem;          /* İkon boyutu */
+    color: #1abc9c;             /* Modern yeşil */
+    margin-bottom: 10px;        /* İkon alt boşluk */
+}
+
+.hobby-item:hover i {
+    color: #16a085;             /* Hover'da ikon rengi */
+}
+
+.hobby-item p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+    .hobby-item {
+        padding: 15px;
+    }
+
+    .hobby-item i {
+        font-size: 2rem; /* Daha küçük ikon */
+    }
+}
+/* --- Hobiler ve İlgi Alanları */

@@ -1,0 +1,85 @@
+/* Proje kartları için stil */
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: #ecf0f1;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+/* Buton stili */
+.btn-primary {
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #16a085;
+}
+
+/* Kart içeriği */
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.projects {
+    margin: 0 120px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.projects h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1abc9c; /* Başlık altı çizgi */
+    display: inline-block;
+    padding-bottom: 5px;
+    justify-content: center;
+}
+
+h5.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #34495e;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #1abc9c; /* Başlık altı çizgi */
+}
+
+.card-text {
+    text-indent: 40px; /* Paragraf girintisi */
+    text-align: left;  /* Yazıyı sola yasla */
+    color: #34495e;    /* Yazı rengi */
+    font-size: 1rem;   /* Yazı boyutu */
+    line-height: 1.6;  /* Satır yüksekliği */
+}
+
+
+/* proje ilerleme çubuğu
+.progress-bar {
+    background-color: #1abc9c;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.progress {
+    background-color: #6ce4cc;
+    height: 20px;
+    font-size: 14px;
+}  */

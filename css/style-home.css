@@ -1,0 +1,130 @@
+/* Tam ekran banner */
+.hero {
+    background: url('img/hero-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #1abc9c;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero .btn:hover {
+    background-color: #16a085;
+}
+
+/* Slider için stil */
+.slider-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+}
+
+.slider-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.slider-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Bölüm Başlıkları */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+/* Proje kartları */
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: #ecf0f1;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.contact {
+    margin: 0 120px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1abc9c; /* Başlık altı çizgi */
+    display: inline-block;
+    padding-bottom: 5px;
+    justify-content: center;
+}
+
