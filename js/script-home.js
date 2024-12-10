@@ -6,6 +6,46 @@ const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const sliderButton = document.querySelector('.slider-button');
 
+// Görsel setleri
+const largeImages = [
+    'img/hero-background1.jpg',
+    'img/hero-background2.jpg',
+    'img/hero-background3.jpg'
+];
+const tabletImages = [
+    'img/hero-background-tablet1.jpg',
+    'img/hero-background-tablet2.jpg',
+    'img/hero-background-tablet3.jpg'
+];
+const mobileImages = [
+    'img/hero-background-mobile1.jpg',
+    'img/hero-background-mobile2.jpg',
+    'img/hero-background-mobile3.jpg'
+];
+
+// Ekran boyutuna göre uygun görselleri yükle
+function loadImagesBasedOnScreenSize() {
+    const screenWidth = window.innerWidth;
+
+    let selectedImages;
+    if (screenWidth <= 576) {
+        selectedImages = mobileImages; // Küçük ekranlar (mobil)
+    } else if (screenWidth <= 1024) {
+        selectedImages = tabletImages; // Orta ekranlar (tablet)
+    } else {
+        selectedImages = largeImages; // Geniş ekranlar (masaüstü)
+    }
+
+    // Slaytlara görselleri uygula
+    slides.forEach((slide, index) => {
+        slide.style.backgroundImage = `url('${selectedImages[index]}')`;
+    });
+}
+
+// Sayfa yüklendiğinde ve pencere boyutu değiştiğinde görselleri güncelle
+window.addEventListener('load', loadImagesBasedOnScreenSize);
+window.addEventListener('resize', loadImagesBasedOnScreenSize);
+
 sliderButton.target = '_blank'; // yeni sekmede aç
 
 // Slayt URL'leri

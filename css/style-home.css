@@ -29,6 +29,7 @@
     background-position: center;
 }
 
+/* slayt düğmeleri */
 .slider-controls {
     position: absolute;
     top: 50%;
@@ -54,6 +55,7 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* slayt üstü link düğmesi */
 .slider-button {
     position: absolute;
     bottom: 30px;
