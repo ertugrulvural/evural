@@ -77,7 +77,7 @@
 .skills h2 {
     font-size: 1.8rem;
     color: #34495e;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-bottom: 2px solid #1abc9c; /* Başlık altı çizgi */
     display: inline-block;
     padding-bottom: 5px;
@@ -133,7 +133,7 @@
     display: flex;               /* Flexbox kullanımı */
     flex-wrap: wrap;             /* Ekran daraldığında öğeler alt alta geçsin */
     justify-content: space-between; /* Yatayda boşluk ayarı */
-    gap: 20px;                   /* Öğeler arasındaki boşluk */
+    gap: 40px;                   /* Öğeler arasındaki boşluk */
     margin: 40px 0;
 }
 
@@ -147,14 +147,25 @@
     transition: transform 0.3s ease;
 }
 
+.others {
+    background-color: #ecf0f1;   /* Hafif gri arka plan */
+    border-radius: 10px;         /* Yuvarlatılmış köşeler */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    flex: 1 1 calc(33% - 80px); /* Genişlik: %50 eksi boşluk */
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
 .experience:hover,
-.education:hover {
+.education:hover,
+.others:hover {
     transform: translateY(-5px); /* Hover'da yukarı kaldırma efekti */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .experience h2,
-.education h2 {
+.education h2,
+.others h2 {
     font-size: 1.8rem;
     color: #34495e;
     margin-bottom: 15px;
@@ -183,7 +194,8 @@ ul li {
     }
 
     .experience,
-    .education {
+    .education,
+    .others {
         flex: 1 1 100%;         /* Tam genişlik alsın */
     }
 }
@@ -193,6 +205,7 @@ ul li {
 /* Hobiler ve İlgi Alanları --- */
 .hobbies {
     margin: 40px 0;
+    margin-top: 60px; /* orjinale geçerken silinecek */
     text-align: center;
 }
 

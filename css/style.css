@@ -67,7 +67,7 @@ body {
 }
 
 main {
-    padding: 80px 20px; /* Sabit navigasyon için yukarı boşluk */
+    padding: 40px 40px; /* Sabit navigasyon için yukarı boşluk */
     text-align: center;
     flex-grow: 1; /* İçeriğin büyüdükçe footer'ı itmesini sağla */
 }
